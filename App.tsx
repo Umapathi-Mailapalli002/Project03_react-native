@@ -22,6 +22,7 @@ function App(): React.JSX.Element {
     let color = "#";
     for (let i = 0; i < 6; i++) {
       color += hexRange[Math.floor(Math.random() * 16)];
+      setRandomBackground(color);  
       console.log(color);
     }
   }
